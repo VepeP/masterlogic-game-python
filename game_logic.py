@@ -1,6 +1,7 @@
 import random, math, os
 import print_to_console as p
 
+
 def clear():
     os.system('cls') if os.name == "nt" else os.system('clear')
 
@@ -27,9 +28,6 @@ def main(LIVES):
     else:
         p.print_looser()
     print(f"  The number was: {guess_number}")
-    input('  Press ENTER to return to main menu!')
-    clear()
-    main_menu()
 
 
 def evaluate_guess(guess_number, player_guess):

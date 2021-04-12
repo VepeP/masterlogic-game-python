@@ -15,13 +15,18 @@ def main_menu():
     elif choice == '1':
         LIVES = 10
         g.main(LIVES)
+        return_to_main_menu()
     elif choice == '2':
         g.clear()
         p.print_title()
         p.print_rules()
-        input('  Press ENTER to return to main menu!')
-        g.clear()
-        main_menu()
+        return_to_main_menu()
+
+
+def return_to_main_menu():
+    input('  Press ENTER to return to main menu!')
+    g.clear()
+    main_menu()
 
 
 if __name__ == '__main__':
